@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <title>E.C.H.O. | Operator Authentication</title>
+    <meta name="description" content="E.C.H.O. operator authentication" />
+    <link rel="stylesheet" href="/login.css" />
+  </head>
+  <body>
+    <main class="login-stage">
+      <section class="login-console" aria-labelledby="echo-wordmark">
+        <div class="login-brand">
+          <div class="echo-wordmark" id="echo-wordmark">E.C.H.O.</div>
+          <p class="echo-definition">Electronic Cultured Home Operator</p>
+        </div>
+
+        <div class="login-divider" aria-hidden="true"><span></span></div>
+
+        <form id="login-form">
+          <label for="operator-password">Operator password</label>
+          <input
+            id="operator-password"
+            name="password"
+            type="password"
+            autocomplete="current-password"
+            required
+            autofocus
+          />
+          <button type="submit" id="access-button">Access archive</button>
+          <p id="login-error" class="login-error" role="alert" aria-live="polite"></p>
+        </form>
+
+        <p class="login-classification">LOCAL ARCHIVE <span></span> AUTHORIZED OPERATORS ONLY</p>
+      </section>
+    </main>
+    <script type="module" src="/login.js"></script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "blackbox",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js && node --check js/login.js && node --check js/app.js && node --check js/database.js && node --check js/components/navigation.js && node --check js/modules/dashboard.js"
+  },
+  "dependencies": {
+    "playwright": "^1.64.1"
+  }
+}
